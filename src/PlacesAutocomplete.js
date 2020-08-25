@@ -6,7 +6,7 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import debounce from 'lodash.debounce';
+import { debounce } from 'lodash';
 import { compose } from './helpers';
 
 // transform snake_case to camelCase

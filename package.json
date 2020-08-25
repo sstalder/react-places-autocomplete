@@ -9,10 +9,6 @@
     "build:umd": "webpack --output-filename index.umd.js",
     "build:umd.min": "webpack --output-filename index.umd.min.js -p"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/sstalder/react-places-autocomplete.git"
-  },
   "files": [
     "dist",
     "README.md"
@@ -35,7 +31,6 @@
     "file-loader": "6.0.0",
     "image-webpack-loader": "6.0.0",
     "json-loader": "0.5.7",
-    "lodash.debounce": "^4.0.8",
     "npm-run-all": "^4.1.5",
     "prettier": "2.1.0",
     "prop-types": "^15.7.2",
@@ -48,5 +43,8 @@
   },
   "peerDependencies": {
     "react": ">=16.13.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.20"
   }
 }
