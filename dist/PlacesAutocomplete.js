@@ -9,7 +9,7 @@ var _react = _interopRequireDefault(require("react"));
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
-var _lodash = _interopRequireDefault(require("lodash.debounce"));
+var _lodash = require("lodash");
 
 var _helpers = require("./helpers");
 
@@ -400,7 +400,7 @@ var PlacesAutocomplete = /*#__PURE__*/function (_React$Component) {
       userInputValue: props.value,
       ready: !props.googleCallbackName
     };
-    _this.debouncedFetchPredictions = (0, _lodash["default"])(_this.fetchPredictions, props.debounce);
+    _this.debouncedFetchPredictions = (0, _lodash.debounce)(_this.fetchPredictions, props.debounce);
     return _this;
   }
 
