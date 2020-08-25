@@ -1,8 +1,8 @@
 /*
-* Copyright (c) 2016-present, Ken Hibino.
-* Licensed under the MIT License (MIT).
-* See https://kenny-hibino.github.io/react-places-autocomplete
-*/
+ * Copyright (c) 2016-present, Ken Hibino.
+ * Licensed under the MIT License (MIT).
+ * See https://kenny-hibino.github.io/react-places-autocomplete
+ */
 
 import React from 'react';
 import PropTypes from 'prop-types';
@@ -371,7 +371,7 @@ class PlacesAutocomplete extends React.Component {
 
 PlacesAutocomplete.propTypes = {
   onChange: PropTypes.func.isRequired,
-  value: PropTypes.string.isRequired,
+  value: PropTypes.string,
   children: PropTypes.func.isRequired,
   onError: PropTypes.func,
   onSelect: PropTypes.func,
@@ -396,6 +396,7 @@ PlacesAutocomplete.defaultProps = {
       '[react-places-autocomplete]: error happened when fetching data from Google Maps API.\nPlease check the docs here (https://developers.google.com/maps/documentation/javascript/places#place_details_responses)\nStatus: ',
       status
     ),
+  value: '',
   /* eslint-enable no-unused-vars, no-console */
   searchOptions: {},
   debounce: 200,
